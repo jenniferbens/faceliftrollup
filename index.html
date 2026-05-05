@@ -25,7 +25,7 @@
   }
   * { box-sizing:border-box; margin:0; padding:0; }
   body { font-family:'Inter',sans-serif; background:var(--bg); color:var(--text); font-size:14px; line-height:1.5; }
- 
+
   .topbar {
     background:var(--navy); padding:0 48px; height:56px;
     display:flex; align-items:center; justify-content:space-between;
@@ -33,7 +33,7 @@
   .topbar img { height:28px; filter:brightness(0) invert(1); }
   .topbar-fallback { color:white; font-size:17px; font-weight:700; letter-spacing:-0.3px; display:none; }
   .topbar-meta { font-size:12px; color:rgba(255,255,255,0.45); }
- 
+
   .hero {
     background:linear-gradient(135deg,#1a2b4a 0%,#1e3a6e 60%,#2a5fa8 100%);
     padding:52px 48px 44px; color:white; position:relative; overflow:hidden;
@@ -51,7 +51,7 @@
   .hero h1 span { color:#4e9fd4; }
   .hero-sub { font-size:15px; color:rgba(255,255,255,0.6); max-width:500px; font-weight:300; line-height:1.65; }
   .hero-meta { margin-top:22px; font-size:11.5px; color:rgba(255,255,255,0.35); }
- 
+
   /* AWARENESS BANNER */
   .awareness-banner {
     background:linear-gradient(90deg,#1e4a8a,#3681d4);
@@ -61,7 +61,7 @@
   .awareness-icon { font-size:20px; flex-shrink:0; }
   .awareness-text { font-size:13.5px; font-weight:500; }
   .awareness-text span { font-weight:700; }
- 
+
   .filter-bar {
     background:var(--white); border-bottom:1px solid var(--line);
     padding:12px 48px; display:flex; gap:8px; align-items:center; flex-wrap:wrap;
@@ -75,9 +75,9 @@
   }
   .ver-btn:hover { background:var(--sky-pale); border-color:var(--blue); color:var(--blue); }
   .ver-btn.active { background:var(--blue); color:white; border-color:var(--blue); }
- 
+
   .content { padding:40px 48px 64px; max-width:1400px; margin:0 auto; }
- 
+
   .legend {
     display:flex; gap:18px; align-items:center; margin-bottom:28px;
     padding:10px 16px; background:var(--white); border:1px solid var(--line); border-radius:8px; width:fit-content;
@@ -87,7 +87,7 @@
   .dot { width:8px; height:8px; border-radius:50%; }
   .dot-yes { background:var(--yes); }
   .dot-no  { background:var(--no); }
- 
+
   .persona-section { margin-bottom:44px; }
   .persona-header {
     display:flex; align-items:center; gap:14px;
@@ -96,7 +96,7 @@
   .persona-icon { font-size:20px; }
   .persona-title { font-size:17px; font-weight:700; display:block; letter-spacing:-0.2px; }
   .persona-desc  { font-size:12px; color:rgba(255,255,255,0.5); display:block; margin-top:1px; }
- 
+
   .feature-table {
     width:100%; border-collapse:collapse;
     border:1px solid var(--line); border-top:none;
@@ -157,7 +157,7 @@
     box-shadow:0 2px 8px rgba(0,0,0,0.15);
     pointer-events:none;
   }
- 
+
   .warning-box {
     margin-top:10px; padding:8px 10px;
     background:#fff4e6; border:1px solid #f0a500; border-radius:6px;
@@ -165,12 +165,12 @@
   }
   .warning-icon { font-size:13px; flex-shrink:0; line-height:1.4; }
   .warning-text { font-size:11px; color:#7a4a00; font-weight:500; line-height:1.4; }
- 
+
   /* TIMELINE */
   .timeline-section { margin-top:52px; padding-top:36px; border-top:2px solid var(--line); }
   .section-title { font-size:20px; font-weight:700; color:var(--navy); margin-bottom:6px; letter-spacing:-0.3px; }
   .section-sub  { font-size:13.5px; color:var(--mid); margin-bottom:28px; }
- 
+
   .timeline-grid {
     display:grid;
     grid-template-columns:repeat(7,1fr);
@@ -189,7 +189,7 @@
   .tl-dot.accent { background:var(--blue); box-shadow:0 0 0 2px var(--blue); }
   .tl-date { font-size:10px; letter-spacing:1px; text-transform:uppercase; color:var(--mid); text-align:center; margin-bottom:8px; font-weight:500; line-height:1.4; }
   .tl-ver { display:block; font-size:10px; font-weight:700; color:var(--blue); letter-spacing:0.5px; margin-top:2px; }
- 
+
   .tl-card {
     background:var(--white); border:1px solid var(--line);
     border-radius:8px; padding:12px; font-size:12px; line-height:1.5;
@@ -200,7 +200,7 @@
   .tl-card ul.tl-events li::before { content:"·"; color:var(--blue); font-weight:900; position:absolute; left:0; }
   .tl-card.highlight { border-color:var(--blue); border-width:2px; background:var(--sky); }
   .tl-card.pilot { border-color:#f0a500; background:#fffbee; }
- 
+
   /* FEATURE SUMMARY BOX inside timeline card */
   .features-label {
     font-size:10px; text-transform:uppercase; letter-spacing:1.5px;
@@ -214,19 +214,27 @@
   .fb-subs { list-style:none; padding:0; margin-top:2px; }
   .fb-subs li { font-size:11px; color:var(--mid); padding-left:10px; position:relative; }
   .fb-subs li::before { content:"↳"; color:var(--blue); font-size:9px; position:absolute; left:0; top:1px; }
- 
+
   .toggle-note {
     margin-top:8px; padding:7px 10px;
     background:var(--sky); border:1px solid var(--blue);
     border-radius:6px; font-size:11px; color:var(--navy); font-weight:500;
   }
- 
+
+  .timeline-disclaimer {
+    display:inline-flex; align-items:center; gap:8px;
+    margin-bottom:24px; padding:8px 16px;
+    background:#fff8e6; border:1px solid #f0a500; border-radius:20px;
+    font-size:12px; font-weight:600; color:#7a4a00;
+  }
+  .timeline-disclaimer-icon { font-size:14px; flex-shrink:0; }
+
   .not-cf-note {
     margin-top:8px; padding:6px 10px;
     background:#f0f4ff; border:1px solid #b0c4e8; border-radius:6px;
     font-size:11px; color:#3a4e7a; font-weight:600; line-height:1.4;
   }
- 
+
   .tl-phase-rollout { position:relative; }
   .tl-dot-rollout {
     width:20px; height:20px;
@@ -250,7 +258,7 @@
     font-size:10px; font-weight:700; letter-spacing:0.5px;
     padding:3px 10px; border-radius:20px; margin-bottom:8px;
   }
- 
+
   .demo-banner {
     background: var(--sky-pale); border: 1px solid var(--blue);
     border-radius: 10px; padding: 16px 24px; margin-top: 36px;
@@ -267,9 +275,9 @@
     transition: background 0.15s; white-space: nowrap;
   }
   .demo-btn:hover { background: var(--navy); }
- 
+
   .footer { background:var(--navy); color:rgba(255,255,255,0.35); text-align:center; padding:20px; font-size:12px; margin-top:60px; }
- 
+
   @media (max-width:768px) {
     .topbar,.hero,.filter-bar,.content,.awareness-banner { padding-left:20px; padding-right:20px; }
     .timeline-grid { grid-template-columns:1fr 1fr; gap:16px; }
@@ -278,38 +286,38 @@
 </style>
 </head>
 <body>
- 
+
 <nav class="topbar">
   <div>
     <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMzYiIGhlaWdodD0iMjgiPgogIDxnIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAsMikiPgogICAgPGxpbmUgeDE9IjE2IiB5MT0iMTAiIHgyPSI2IiAgeTI9IjQiICBzdHJva2U9IndoaXRlIiBzdHJva2Utd2lkdGg9IjEuNSIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBvcGFjaXR5PSIwLjciLz4KICAgIDxsaW5lIHgxPSIxNiIgeTE9IjEwIiB4Mj0iNCIgIHkyPSIxMCIgc3Ryb2tlPSJ3aGl0ZSIgc3Ryb2tlLXdpZHRoPSIxLjUiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgb3BhY2l0eT0iMC43Ii8+CiAgICA8bGluZSB4MT0iMTYiIHkxPSIxMCIgeDI9IjYiICB5Mj0iMTYiIHN0cm9rZT0id2hpdGUiIHN0cm9rZS13aWR0aD0iMS41IiBzdHJva2UtbGluZWNhcD0icm91bmQiIG9wYWNpdHk9IjAuNyIvPgogICAgPHJlY3QgeD0iMTMiIHk9IjEwIiB3aWR0aD0iNiIgaGVpZ2h0PSIxOCIgcng9IjEiIGZpbGw9IndoaXRlIi8+CiAgICA8cmVjdCB4PSIxMSIgeT0iNyIgIHdpZHRoPSIxMCIgaGVpZ2h0PSI1IiByeD0iMSIgZmlsbD0id2hpdGUiLz4KICAgIDxyZWN0IHg9IjE0IiB5PSI0IiAgd2lkdGg9IjQiICBoZWlnaHQ9IjQiIHJ4PSIxIiBmaWxsPSJ3aGl0ZSIgb3BhY2l0eT0iMC45Ii8+CiAgICA8cmVjdCB4PSIxMCIgeT0iMjciIHdpZHRoPSIxMiIgaGVpZ2h0PSIzIiByeD0iMSIgZmlsbD0id2hpdGUiLz4KICAgIDxyZWN0IHg9IjE1IiB5PSIxNyIgd2lkdGg9IjIiIGhlaWdodD0iMyIgcng9IjAuNSIgZmlsbD0iIzM2ODFkNCIvPgogIDwvZz4KICA8dGV4dCB4PSIzNiIgeT0iMjQiIGZvbnQtZmFtaWx5PSJJbnRlcixBcmlhbCxzYW5zLXNlcmlmIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iNzAwIiBmaWxsPSJ3aGl0ZSIgbGV0dGVyLXNwYWNpbmc9Ii0wLjUiPktNUzwvdGV4dD4KICA8dGV4dCB4PSI3NSIgeT0iMjQiIGZvbnQtZmFtaWx5PSJJbnRlcixBcmlhbCxzYW5zLXNlcmlmIiBmb250LXNpemU9IjE4IiBmb250LXdlaWdodD0iMzAwIiBmaWxsPSJ3aGl0ZSIgbGV0dGVyLXNwYWNpbmc9IjAiPkxpZ2h0aG91c2U8L3RleHQ+Cjwvc3ZnPg==" alt="KMS Lighthouse">
   </div>
   <span class="topbar-meta">Facelift Roadmap &nbsp;·&nbsp; April 27, 2026</span>
 </nav>
- 
+
 <div class="hero">
   <div class="hero-label">Product Roadmap 2026</div>
   <h1>UI <span>Facelift</span> Roadmap</h1>
   <p class="hero-sub">A phased rollout of the redesigned interface across Agent, CM, and Admin personas — from internal validation through full global deployment.</p>
   <div class="hero-meta">Last updated: April 27, 2026</div>
 </div>
- 
+
 <div class="awareness-banner">
   <span class="awareness-icon">📢</span>
   <span class="awareness-text"><span>Awareness &amp; Collaboration</span> — ongoing alignment with Delivery &amp; Sales throughout the rollout</span>
 </div>
- 
+
 <div class="filter-bar">
   <span class="filter-label">Version</span>
   <button class="ver-btn active" onclick="filterVersion(this,'all')">All</button><button class="ver-btn" onclick="filterVersion(this,'26.4')">26.4</button><button class="ver-btn" onclick="filterVersion(this,'26.5')">26.5</button><button class="ver-btn" onclick="filterVersion(this,'26.6')">26.6</button><button class="ver-btn" onclick="filterVersion(this,'26.7')">26.7</button><button class="ver-btn" onclick="filterVersion(this,'26.8')">26.8</button><button class="ver-btn" onclick="filterVersion(this,'26.9')">26.9</button><button class="ver-btn" onclick="filterVersion(this,'26.10')">26.10</button><button class="ver-btn" onclick="filterVersion(this,'26.11')">26.11</button><button class="ver-btn" onclick="filterVersion(this,'26.12')">26.12</button>
 </div>
- 
+
 <div class="content">
   <div class="legend">
     <span class="legend-label">Legend</span>
     <div class="legend-item"><span class="dot dot-yes"></span> Included in release</div>
     <div class="legend-item"><span class="dot dot-no"></span> Not included</div>
   </div>
- 
+
   
 <div class="persona-section">
   <div class="persona-header">
@@ -403,13 +411,18 @@
 </tbody>
   </table>
 </div>
- 
+
   <div class="timeline-section">
     <div class="section-title">Customer Facing Rollout</div>
     <p class="section-sub">From internal-only releases through full global deployment by end of 2026. Each phase box shows what is new in that release.</p>
- 
+
+    <div class="timeline-disclaimer">
+      <span class="timeline-disclaimer-icon">🗓️</span>
+      <span>This timeline is indicative and subject to change — it does not represent a final commitment.</span>
+    </div>
+
     <div class="timeline-grid">
- 
+
       <div class="tl-phase">
         <div class="tl-dot"></div>
         <div class="tl-date">Internal<span class="tl-ver">26.4 &amp; 26.5</span></div>
@@ -423,7 +436,7 @@
           <div class="not-cf-note">⚠️ Not a Facelift customer facing version</div>
         </div>
       </div>
- 
+
       <div class="tl-phase">
         <div class="tl-dot accent"></div>
         <div class="tl-date">Middle of June<span class="tl-ver">26.5</span></div>
@@ -441,7 +454,7 @@
           </div>
         </div>
       </div>
- 
+
       <div class="tl-phase">
         <div class="tl-dot"></div>
         <div class="tl-date">Middle of July<span class="tl-ver">26.6</span></div>
@@ -461,7 +474,7 @@
           </div>
         </div>
       </div>
- 
+
       <div class="tl-phase">
         <div class="tl-dot"></div>
         <div class="tl-date">Middle of August<span class="tl-ver">26.7</span></div>
@@ -481,7 +494,7 @@
           </div>
         </div>
       </div>
- 
+
       <div class="tl-phase tl-phase-rollout">
         <div class="tl-dot accent tl-dot-rollout"></div>
         <div class="tl-date tl-date-rollout">Middle of September<span class="tl-ver">26.8</span></div>
@@ -506,7 +519,7 @@
           <div class="toggle-note">⚙️ Toggle available to enable / disable the new Article View and System Layout per customer</div>
         </div>
       </div>
- 
+
       <div class="tl-phase">
         <div class="tl-dot accent"></div>
         <div class="tl-date">By the end of 2026<span class="tl-ver">26.10 — Next</span></div>
@@ -518,12 +531,12 @@
           </ul>
         </div>
       </div>
- 
+
     </div>
   </div>
- 
+
 </div>
- 
+
 <div class="content" style="padding-top:0;padding-bottom:0;max-width:1400px;margin:0 auto;padding-left:48px;padding-right:48px">
   <div class="demo-banner">
     <span class="demo-banner-icon">🖥️</span>
@@ -536,9 +549,9 @@
     <a class="demo-btn" href="https://kms-trunk-15159.cdg300.kmslh.ai/kms/lh/login" target="_blank">Open Demo →</a>
   </div>
 </div>
- 
+
 <div class="footer">KMS Lighthouse &nbsp;·&nbsp; Facelift Roadmap 2026 &nbsp;·&nbsp; Internal Use</div>
- 
+
 <script>
 function filterVersion(btn, version) {
   document.querySelectorAll('.ver-btn').forEach(b => b.classList.remove('active'));
@@ -553,7 +566,7 @@ function filterVersion(btn, version) {
     td.colSpan = version === 'all' ? 10 : 2;
   });
 }
- 
+
 // Mark first introduction (first ✓ after ✗ chain) and add hover tooltips
 document.addEventListener('DOMContentLoaded', function () {
   // Inject 26.12 column header where missing
@@ -581,7 +594,7 @@ document.addEventListener('DOMContentLoaded', function () {
   document.querySelectorAll('.feat-row:not(.feat-leaf) td[colspan]').forEach(td => {
     td.colSpan = 10;
   });
- 
+
   // Tooltips on every cell badge: show the version
   document.querySelectorAll('.ver-cell').forEach(td => {
     const badge = td.querySelector('.badge');
@@ -590,7 +603,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const isYes = badge.classList.contains('badge-yes') || badge.classList.contains('badge-new');
     badge.setAttribute('data-tip', (isYes ? 'Included in ' : 'Not in ') + ver);
   });
- 
+
   // Find first ✓ in each row and mark it as introduced
   document.querySelectorAll('.subfeat-row, .feat-row.feat-leaf').forEach(row => {
     const cells = row.querySelectorAll('.ver-cell');
@@ -609,4 +622,3 @@ document.addEventListener('DOMContentLoaded', function () {
 </script>
 </body>
 </html>
- 
